@@ -3,7 +3,7 @@ scriptencoding utf-8
 
 import autoload 'scope/popup.vim'
 export def Launcher(profile: string = null_string)
-  var config_file = get(g:, 'ctrlp_launcher_file', '~/.ctrlp-launcher')
+  var config_file = get(g:, 'scope_launcher_file', '~/.scope-launcher')
   if !empty(profile)
     config_file ..= '-' .. profile
   endif
